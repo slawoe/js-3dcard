@@ -47,10 +47,10 @@ body {
     rgba(8, 83, 156, 0.75)
   );
 }
-.info > h1 {
+h1 {
   font-size: 3rem;
 }
-.info > p {
+p {
   padding: 2rem 0;
   font-size: 1.3rem;
   font-weight: lighter;
@@ -71,7 +71,8 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-button.active {
+.sizes > button:hover,
+.sizes > button:focus {
   background: lightslategray;
   color: white;
 }
