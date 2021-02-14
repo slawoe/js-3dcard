@@ -22,8 +22,8 @@ body {
 }
 .card {
   min-height: 80vh;
-  width: 35rem;
-  padding: 0 5rem;
+  width: 25rem;
+  padding: 0 2rem;
   border-radius: 30px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
   transform-style: preserve-3d;
@@ -34,6 +34,7 @@ body {
 .sneaker > img {
   width: 20rem;
   z-index: 2;
+  transition: all 0.75s ease-out;
 }
 .circle {
   width: 15rem;
@@ -49,6 +50,10 @@ body {
 }
 h1 {
   font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  transition: all 0.75s ease-out;
 }
 p {
   padding: 2rem 0;
@@ -56,10 +61,12 @@ p {
   font-weight: lighter;
   color: lightslategray;
   text-transform: uppercase;
+  transition: all 0.75s ease-out;
 }
 .sizes {
   display: flex;
   justify-content: space-between;
+  transition: all 0.75s ease-out;
 }
 .sizes > button {
   font-weight: bold;
@@ -72,12 +79,16 @@ p {
   cursor: pointer;
 }
 .sizes > button:hover,
-.sizes > button:focus {
-  background: lightslategray;
-  color: white;
+.sizes > button:focus,
+.purchase > button:hover,
+.purchase > button:hover {
+  background: white;
+  color: #f54642;
+  border: 2px solid rgb(8, 83, 156);
 }
 .purchase {
   margin-top: 5rem;
+  transition: all 0.75s ease-out;
 }
 .purchase > button {
   width: 100%;
